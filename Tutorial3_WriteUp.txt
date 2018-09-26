@@ -1,0 +1,31 @@
+Danang Gagastama Joewono (1606918130)
+APAP-C
+
+1.  localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono&flyHour=20
+    apakah hasilnya? Jika error, tuliskan penjelasan Anda.
+    Tidak terjadi error.
+
+2.  localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono&flyHour=20
+    apakah hasilnya? Jika error, tuliskan penjelasan Anda.
+    Terjadi bad request error karena tidak terdapat required flyHour.
+
+3.  localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono&flyHour=20
+    localhost:8080/pilot/view?licenseNumber=1234
+    Pertanyaan 3​: apakah data Pilot tersebut muncul? Jika tidak, mengapa?
+    Data muncul dan berhasil ditambahkan
+
+4.  Coba matikan program dan jalankan kembali serta buka
+    localhost:8080/pilot/view?licenseNumber=1234
+    Pertanyaan 4​: apakah data Pilot tersebut muncul? Jika tidak, mengapa?
+    Tidak muncul karena data tidak tersimpan pada database
+
+5.  Jalankan program dan buka
+    localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono&flyHour=20
+    localhost:8080/pilot/viewall
+    Pertanyaan 5​: apakah data Pilot tersebut muncul?
+    Data pilot tersebut muncul
+
+6.  Coba tambahkan data Pilot lainnya dengan NPM yang berbeda, lalu buka
+    localhost:8080/pilot/viewall
+    Pertanyaan 6​: Apakah semua data Pilot muncul?
+    Semua data pilot muncul
